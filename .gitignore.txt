@@ -1,0 +1,98 @@
+# =========================
+# OS / Editor files
+# =========================
+.DS_Store
+Thumbs.db
+*.log
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# IntelliJ / Eclipse / Java IDEs
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+.factorypath
+
+# =========================
+# Git
+# =========================
+.git/
+.gitignore.bak
+
+# =========================
+# Node / Next.js (Frontend)
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+.next/
+out/
+dist/
+build/
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Next.js cache
+.cache/
+
+# =========================
+# Java / Spring Boot (Backend)
+# =========================
+target/
+build/
+*.class
+
+# Maven wrapper / Gradle
+.mvn/wrapper/maven-wrapper.jar
+.gradle/
+
+# Spring Boot logs
+logs/
+*.log
+
+# =========================
+# Application Config Secrets
+# =========================
+application.properties
+application.yml
+application-*.properties
+application-*.yml
+
+# =========================
+# Temporary / Upload folders
+# =========================
+uploads/
+temp/
+tmp/
+
+# =========================
+# Package Managers / Lock files (keep if you want, optional)
+# =========================
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# =========================
+# Misc
+# =========================
+*.zip
+*.tar
+*.tar.gz
+*.rar
+# Spring Boot secrets
+**/src/main/resources/application.properties
+**/src/main/resources/application.yml
+**/src/main/resources/application-*.properties
+**/src/main/resources/application-*.yml

@@ -1,0 +1,6 @@
+.mit_text_area > textarea {
+    font-family: "Fira Sans";
+  }
+  .mit_text_area > .ant-input-suffix {
+    transform: translateY(4px);
+  }

@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css2?family=Underdog&display=swap");
+@import "tailwindcss";
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f6f7f9;
+  color: #364153;
+}
+
+/* Enhanced Swoosh Background Variations */
+.swoosh-bg {
+  background-color: #750014;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.swoosh-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 50%;
+  background-color: #f8fafc;
+  transform: skewX(-20deg) translateX(-20%);
+  border-top-left-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Alternative swoosh for containers */
+.swoosh-container {
+  background-color: #750014;
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.swoosh-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 50%;
+  background-color: #f8fafc;
+  transform: skewX(-20deg) translateX(-20%);
+  border-top-left-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+}
+
+/* Alternative swoosh with gradient */
+.swoosh-bg-gradient {
+  background: linear-gradient(135deg, #750014 0%, #be185d 50%, #e11d48 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.swoosh-bg-gradient::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 50%;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  transform: skewX(-20deg) translateX(-20%);
+  border-top-left-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Reverse swoosh (white to colored) */
+.swoosh-bg-reverse {
+  background-color: #f8fafc;
+  position: relative;
+  overflow: hidden;
+}
+
+.swoosh-bg-reverse::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 50%;
+  background-color: #750014;
+  transform: skewX(-20deg) translateX(-20%);
+  border-top-left-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Different angle variations */
+.swoosh-bg-gentle {
+  background-color: #750014;
+  position: relative;
+  overflow: hidden;
+}
+
+.swoosh-bg-gentle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 60%;
+  background-color: #f8fafc;
+  transform: skewX(-10deg) translateX(-15%);
+  border-top-left-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+  transition: all 0.3s ease-in-out;
+}
+
+.swoosh-bg-steep {
+  background-color: #750014;
+  position: relative;
+  overflow: hidden;
+}
+
+.swoosh-bg-steep::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 40%;
+  background-color: #f8fafc;
+  transform: skewX(-30deg) translateX(-25%);
+  border-top-left-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Animated version */
+.swoosh-bg-animated {
+  background-color: #750014;
+  position: relative;
+  overflow: hidden;
+}
+
+.swoosh-bg-animated::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 50%;
+  background-color: #f8fafc;
+  transform: skewX(-20deg) translateX(-20%);
+  border-top-left-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: swooshPulse 4s ease-in-out infinite;
+}
+
+@keyframes swooshPulse {
+  0%, 100% {
+    transform: skewX(-20deg) translateX(-20%);
+  }
+  50% {
+    transform: skewX(-15deg) translateX(-18%);
+  }
+}
+
+/* Hover effects */
+.swoosh-bg-hover {
+  background-color: #750014;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.swoosh-bg-hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 50%;
+  background-color: #f8fafc;
+  transform: skewX(-20deg) translateX(-20%);
+  border-top-left-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+  transition: all 0.4s ease-in-out;
+}
+
+.swoosh-bg-hover:hover::before {
+  left: 40%;
+  transform: skewX(-15deg) translateX(-15%);
+}
+
+/* Dark theme version */
+.swoosh-bg-dark {
+  background-color: #1f2937;
+  position: relative;
+  overflow: hidden;
+}
+
+.swoosh-bg-dark::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 50%;
+  background-color: #374151;
+  transform: skewX(-20deg) translateX(-20%);
+  border-top-left-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Multiple swooshes effect */
+.swoosh-bg-multi {
+  background-color: #750014;
+  position: relative;
+  overflow: hidden;
+}
+
+.swoosh-bg-multi::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 50%;
+  background-color: #f8fafc;
+  transform: skewX(-20deg) translateX(-20%);
+  border-top-left-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+  transition: all 0.3s ease-in-out;
+}
+
+.swoosh-bg-multi::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 70%;
+  background-color: #be185d;
+  transform: skewX(-20deg) translateX(-10%);
+  border-top-left-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+  opacity: 0.7;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Your existing styles */
+.ant-timeline-item-tail {
+  border-color: #ccc !important;
+}
+
+.ant-layout-sider {
+  background-color: white !important;
+  border-inline-end: 1px solid #0505050f;
+}
+
+.ant-menu-inline {
+  border-inline-end: none !important;
+}
+
+.underdog {
+  font-family: "Underdog", system-ui;
+  font-style: normal;
+}
+
+.ant-table-thead {
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.ant-pagination-item-active {
+  border-color: #750014 !important;
+}
+
+.ant-pagination-item-active a {
+  color: #750014 !important;
+}
+
+.ant-pagination {
+  padding-right: 1rem !important;
+}
+
+.cardShadow {
+  box-shadow: 0 1px 2px -2px rgba(0, 0, 0, 0.16),
+    0 3px 6px 0 rgba(0, 0, 0, 0.12), 0 5px 12px 4px rgba(0, 0, 0, 0.09);
+}
+
+.ant-layout-sider-children .ant-menu-vertical {
+  border: none !important;
+}
+
+.ant-menu-item-selected,
+.ant-menu-item-selected .ant-menu-title-content,
+.ant-menu-item-selected::after {
+  background-color: #750014 !important;
+  color: white !important;
+}
+
+.ant-menu-overflow-item:hover::after {
+  border-bottom-color: #750014 !important;
+}
+
+.ant-menu-submenu-selected > .ant-menu-submenu-title,
+.ant-menu-submenu-selected > .ant-menu-submenu-title > .ant-menu-title-content {
+  color: #750014 !important;
+}
+
+.ant-menu-submenu-selected {
+  color: #750014 !important;
+}
+
+.ant-menu-submenu-title:active {
+  background-color: #ffe6e6 !important;
+}
+
+.ant-menu-title-content {
+  color: #364153 !important;
+}
+
+.ant-menu-item-disabled .ant-menu-title-content {
+  color: #00000040 !important;
+}
+
+.payment-modal {
+  .ant-modal-content {
+    padding: 0px !important;
+  }
+  .ant-modal-close-x {
+    color: white !important;
+  }
+  .ant-modal-footer {
+    padding: 0px 24px 20px 24px !important;
+  }
+}

@@ -1,0 +1,9 @@
+.pe_popover > .ant-popover-content > .ant-popover-inner {
+    padding: 4px;
+  }
+  
+  .pe_popover > .ant-popover-content > .ant-popover-inner .ant-popover-title {
+    margin-bottom: 0;
+    min-width: auto;
+  }
+  
