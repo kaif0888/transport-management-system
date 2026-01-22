@@ -77,10 +77,8 @@ All master data is managed in one place, such as:
 
 ## ✅ 1) Create MySQL Database
 Run this in MySQL:
-
-```sql
 CREATE DATABASE transportms;
 
-
+## ✅ Image
 <img width="1919" height="934" alt="image" src="https://github.com/user-attachments/assets/b5a01ea5-266a-43b2-8c1c-ec39ea6e817b" />
 
